@@ -1,0 +1,37 @@
+{% extends 'myapp/navbar.html' %}
+{% block content %}
+<body>
+
+    <!--center-->
+      <br>
+        <div class="row" style="text-align: center;">
+    
+        <div class="col-sm-3" style="text-align: center;"></div>
+      
+        <div class="col-md-6" style="text-align: center;">
+         <div class="card" style="width: 100%; text-align: center;">
+        <div class="card-header text-center text-primary" ><h3 style="text-align: center;">Result using {{ model }} model:</h3></div>
+    
+        <br>
+   
+
+        {% for x,y in count %}
+               <h3 style="text-align: center;">{{ x }} :  {{ y }} Sections</h3>
+        {% endfor %}
+<!--center-->
+<div style="border: 3px solid black;width: 85%; text-align: center; ">
+<h3>EEG is {{ classify }}</h3>
+</div>
+<!--</center>-->
+
+<br>
+</div>
+<div class="card-footer text-center">
+	 
+	</div>
+</form>
+</div>
+</div>
+</div>
+<!--</center> -->
+    </body>
